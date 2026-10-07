@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDCOMPANY | Soluções em Tecnologia da Informação</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navegação -->
+    <header class="navbar" id="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-badge">R</div>
+                <div class="logo-text">
+                    <span class="brand-name">REDCOMPANY</span>
+                    <span class="brand-sub">Tecnologia da Informação</span>
+                </div>
+            </a>
+
+            <!-- Checkbox Hack para Menu Mobile sem JS -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+            <label for="menu-toggle" class="mobile-toggle" aria-label="Abrir Menu">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <nav class="nav-links" id="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#produtos" class="nav-link">Soluções</a></li>
+                    <li><a href="#empresa" class="nav-link">A Empresa</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                    <li><a href="#area-cliente" class="btn-primary-outline">Área do Cliente</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Side Anchor Navigation -->
+    <aside class="side-dots-nav">
+        <a href="#hero" class="side-link" data-title="Início"><span class="dot"></span></a>
+        <a href="#produtos" class="side-link" data-title="Produtos"><span class="dot"></span></a>
+        <a href="#empresa" class="side-link" data-title="Sobre Nós"><span class="dot"></span></a>
+        <a href="#contato" class="side-link" data-title="Contato"><span class="dot"></span></a>
+    </aside>
+
+    <!-- Hero / Slider Section (Carrossel 100% CSS) -->
+    <section id="hero" class="hero-slider">
+        <div class="slider-wrapper">
+            
+            <!-- Slide 1 -->
+            <div id="slide-1" class="slide" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="badge-subtitle">Seja bem-vindo!</span>
+                    <h1>Somos uma <span>empresa de TI</span> que trabalha para o <em>sucesso</em> do seu <strong>negócio</strong></h1>
+                    <p>... há mais de <strong>10 anos</strong> gerando valor real e inovação continuada para nossos clientes.</p>
+                    <div class="hero-actions">
+                        <a href="#empresa" class="btn-hero-primary">Conheça Nossa História <i class="fas fa-arrow-right"></i></a>
+                        <a href="#produtos" class="btn-hero-secondary">Nossos Produtos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div id="slide-2" class="slide" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="badge-subtitle">Transformação Digital</span>
+                    <h1>Sistemas em Nuvem com <span>Alta Performance</span> e Segurança</h1>
+                    <p>Potencialize a gestão comercial e a tomada de decisões com nossa suíte de softwares executivos.</p>
+                    <div class="hero-actions">
+                        <a href="#produtos" class="btn-hero-primary">Explorar Soluções <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Pontos de Navegação do Slider (CSS Anchor Scroll) -->
+        <div class="slider-dots">
+            <a href="#slide-1" class="dot" aria-label="Slide 1"></a>
+            <a href="#slide-2" class="dot" aria-label="Slide 2"></a>
+        </div>
+    </section>
+
+    <!-- Stats / Metrics Section -->
+    <section class="stats-bar" id="empresa">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">+10</span>
+                <span class="stat-label">Anos de Mercado</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">+500</span>
+                <span class="stat-label">Projetos Entregues</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">99.9%</span>
+                <span class="stat-label">SLA de Disponibilidade</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">+100k</span>
+                <span class="stat-label">Requisições de API/Dia</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Produtos -->
+    <section id="produtos" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Produtos</h2>
+                <p>Ecossistema completo de ferramentas desenhadas para escalar suas operações comerciais.</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <article class="card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80');">
+                        <span class="card-badge">WM-2.0</span>
+                        <h3>GESTOR DE VENDAS</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-subtitle">Aplicação para gestão de vendas. Fácil, rápido e integrado.</p>
+                        <p class="card-description">Cotações de Vendas, Pedidos, Política Comercial, Workflow, Clientes, Finanças, Relatórios, Notas Fiscais e integração direta com ERP.</p>
+                        <div class="card-footer">
+                            <span class="tech-tag"><i class="fas fa-server"></i> ON-PREMISE</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80');">
+                        <span class="card-badge">WM-2.0</span>
+                        <h3>CADASTRO DE CLIENTE</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-subtitle">Aplicação para manutenção passo a passo de clientes.</p>
+                        <p class="card-description">Validação automatizada junto à Receita Federal, Sintegra, Simples Nacional e Suframa. Controle por Workflow e Anexos.</p>
+                        <div class="card-footer">
+                            <span class="tech-tag"><i class="fas fa-server"></i> ON-PREMISE</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80');">
+                        <span class="card-badge highlight">CLOUD</span>
+                        <h3>API SERVICES</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-subtitle">Conjunto de APIs em Cloud para integrar com suas aplicações.</p>
+                        <p class="card-description">Consultas automatizadas de CNPJ, Sintegra, Suframa, CEP e regras fiscais prontas para consumo por qualquer software moderno.</p>
+                        <div class="card-footer">
+                            <span class="tech-tag"><i class="fas fa-cloud"></i> CLOUD / API</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80');">
+                        <span class="card-badge">MOBILE</span>
+                        <h3>CRM EXECUTIVO</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-subtitle">Facilidade na gestão de clientes e vendas em um só APP.</p>
+                        <p class="card-description">Acompanhe funil de vendas, metas da equipe, histórico de contatos e compromissos diretamente do smartphone ou navegador.</p>
+                        <div class="card-footer">
+                            <span class="tech-tag"><i class="fas fa-mobile-alt"></i> WEB / APP</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80');">
+                        <span class="card-badge">ANALYTICS</span>
+                        <h3>B.I. DASHBOARDS</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-subtitle">Painéis e Relatórios Inteligentes para decisões ágeis.</p>
+                        <p class="card-description">Transforme grandes volumes de dados operacionais em gráficos dinâmicos e inteligência estratégica de mercado.</p>
+                        <div class="card-footer">
+                            <span class="tech-tag"><i class="fas fa-chart-line"></i> BUSINESS INTELLIGENCE</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&q=80');">
