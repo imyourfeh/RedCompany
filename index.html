@@ -118,6 +118,13 @@
         </div>
     </section>
 
+    <div id="cookie-banner" class="banner-box">
+  <p>Usamos cookies para melhorar sua experiência.</p>
+  <div class="banner-actions">
+    <button id="btn-aceitar" class="btn-primary">Aceitar</button>
+  </div>
+</div>
+
     <!-- Section Produtos -->
     <section id="produtos" class="section-padding">
         <div class="container">
@@ -205,3 +212,187 @@
                 <!-- Card 6 -->
                 <article class="card">
                     <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&q=80');">
+                        Aqui está o código HTML concluído com as seções restantes (**Serviços**, **A Empresa/Sobre**, **Contato**, **Área do Cliente/Login Modal** e o **Footer**), além do script JavaScript ao final para o funcionamento do banner de cookies e interações da página.
+
+```html
+                        <span class="card-badge">TAILOR-MADE</span>
+                        <h3>SISTEMAS SOB MEDIDA</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-subtitle">Desenvolvimento de Software Personalizado.</p>
+                        <p class="card-description">Mapeamos as necessidades exclusivas da sua empresa e desenvolvemos plataformas robustas, escaláveis e sob medida.</p>
+                        <div class="card-footer">
+                            <span class="tech-tag"><i class="fas fa-code"></i> CUSTOM SOFTWARE</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Serviços -->
+    <section id="servicos" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Serviços</h2>
+                <p>Consultoria e suporte técnico especializado para a transformação digital do seu negócio.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Integração de Sistemas (ERP)</h3>
+                    <p>Conectamos suas ferramentas legadas com novos softwares de gestão através de APIs seguras e eficientes.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Migração para Nuvem</h3>
+                    <p>Migre suas infraestruturas locais para servidores em nuvem com máxima segurança e mínimo downtime.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Suporte & Treinamento</h3>
+                    <p>Atendimento especializado contínuo e treinamento de equipes para garantir a eficiência das operações.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section A Empresa -->
+    <section id="empresa-detalhes" class="section-padding">
+        <div class="container company-container">
+            <div class="company-text">
+                <span class="badge-subtitle">Sobre a REDCOMPANY</span>
+                <h2>Inovação constante focada no crescimento do seu negócio</h2>
+                <p>Com mais de uma década de atuação no mercado corporativo de TI, a REDCOMPANY entrega soluções em software que combinam alta performance, segurança de dados e facilidade de uso.</p>
+                <p>Nosso compromisso é otimizar processos comerciais e operacionais, fornecendo ferramentas inteligentes e integração ponta a ponta com sistemas legados e em nuvem.</p>
+            </div>
+            <div class="company-image">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Equipe REDCOMPANY em reunião de trabalho">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contato -->
+    <section id="contato" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Fale com nossos especialistas e descubra como podemos impulsionar sua empresa.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Av. Paulista, 1000 - São Paulo, SP</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@redcompany.com.br</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>+55 (11) 4003-0000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Assunto">
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Sua Mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-hero-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Área do Cliente (Acesso) -->
+    <section id="area-cliente" class="section-padding">
+        <div class="container text-center">
+            <h2>Área do Cliente</h2>
+            <p>Acesse o portal para gerenciar suas licenças, abrir chamados de suporte e visualizar relatórios.</p>
+            <a href="#" class="btn-hero-primary" style="margin-top: 20px; display: inline-block;">Acessar Portal do Cliente</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>REDCOMPANY</h3>
+                <p>Soluções em Tecnologia da Informação que impulsionam empresas para o futuro digital.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#produtos">Soluções</a></li>
+                    <li><a href="#empresa">A Empresa</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 REDCOMPANY. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script JS para interatividade -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Controle do Banner de Cookies
+            const banner = document.getElementById('cookie-banner');
+            const btnAceitar = document.getElementById('btn-aceitar');
+
+            if (btnAceitar && banner) {
+                btnAceitar.addEventListener('click', () => {
+                    banner.classList.add('hidden');
+                    setTimeout(() => {
+                        banner.style.display = 'none';
+                    }, 300);
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+```
