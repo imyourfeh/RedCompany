@@ -18,6 +18,14 @@
 </head>
 <body>
 
+<script src="chatbot.js"></script>
+<script>
+  // Inicializa o chatbot apontando para a sua base de dados extra em JSON
+  initChatbot({
+    jsonUrl: 'minha-base-dados.json'
+  });
+</script>
+
     <!-- Header / Navegação -->
     <header class="navbar" id="header">
         <div class="nav-container">
@@ -117,13 +125,6 @@
             </div>
         </div>
     </section>
-
-    <div id="cookie-banner" class="banner-box">
-  <p>Usamos cookies para melhorar sua experiência.</p>
-  <div class="banner-actions">
-    <button id="btn-aceitar" class="btn-primary">Aceitar</button>
-  </div>
-</div>
 
     <!-- Section Produtos -->
     <section id="produtos" class="section-padding">
@@ -295,7 +296,7 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h4>Endereço</h4>
-                            <p>Av. Paulista, 1000 - São Paulo, SP</p>
+                            <p>Estamos na Jd Nova Europa - Campinas/SP CEP 13040-093</p>
                         </div>
                     </div>
 
@@ -374,25 +375,11 @@
         </div>
     </footer>
 
-    <!-- Script JS para interatividade -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Controle do Banner de Cookies
-            const banner = document.getElementById('cookie-banner');
-            const btnAceitar = document.getElementById('btn-aceitar');
+    <div id="cookie-banner" class="banner-cookies">
+    <p>Usamos cookies para melhorar sua experiência no site.</p>
+    <button id="btn-aceitar" class="btn-cookies">Aceitar</button>
+</div>
 
-            if (btnAceitar && banner) {
-                btnAceitar.addEventListener('click', () => {
-                    banner.classList.add('hidden');
-                    setTimeout(() => {
-                        banner.style.display = 'none';
-                    }, 300);
-                });
-            }
-        });
-    </script>
 
 </body>
 </html>
-
-```
