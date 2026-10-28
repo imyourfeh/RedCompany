@@ -1,3 +1,43 @@
+.banner-cookies {
+    position: fixed; /* Mantém a barra fixa mesmo ao rolar a página */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(26, 32, 44, 0.95); /* Fundo escuro com leve transparência */
+    color: #ffffff;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* Garante que fique sobre todos os outros elementos */
+    font-size: 14px;
+}
+
+/* Botão de aceite */
+.btn-cookies {
+    background-color: #E52E2E;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap; /* Impede que o texto do botão quebre em duas linhas */
+    transition: background-color 0.3s ease;
+}
+
+.btn-cookies:hover {
+    background-color: #941919;
+}
+
+/* Classe utilitária para ocultar o banner */
+.oculto {
+    display: none !important;
+
+}  
+
 /* ==========================================================================
    Design System & Variáveis Global
    ========================================================================== */
@@ -667,3 +707,59 @@ footer {
    ========================================================================== */
 @media (max-width: 992px) {
     .contact-grid
+
+    /* Container do Banner */
+.banner-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 280px;               /* Tamanho compacto */
+  background-color: #0F172A; /* Azul escuro / Fundo principal */
+  color: #F8FAFC;            /* Texto claro */
+  padding: 16px;
+  border-radius: 16px;        /* Bordas arredondadas */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Sombra marcante atrás */
+  border: 1px solid #475569;  /* Borda sutil de apoio */
+  z-index: 9999;
+  font-family: sans-serif;
+  
+  /* Animação suave para sumir */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.banner-box p {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #F8FAFC;
+}
+
+/* Botões */
+.banner-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-primary {
+  background-color: #E52E2E; /* Vermelho destacado */
+  color: #F8FAFC;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;       /* Botão bem redondo */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2563EB; /* Transição para o azul ao passar o mouse */
+}
+
+/* Classe aplicada via JS para fechar */
+.banner-box.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+}
